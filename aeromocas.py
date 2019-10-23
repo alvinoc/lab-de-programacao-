@@ -46,6 +46,21 @@ class Graph():
 
         self.printSolution(dist, src)
 
+def maximo(lista):
+
+    maxv = lista[0]
+    for i in lista:
+        if i > maxv:
+            maxv = i
+    return maxv
+
+
+def min(lista):
+    minv = lista[0]
+    for i in lista:
+        if i<minv:
+            minv = i
+    return minv
 
 
 lista_primeira_linha = list(map(int,input().split()))
@@ -66,8 +81,16 @@ for i in range(0,vertices):
     g.dijkstra(i)
     distancias.append(g.dist)
 
-#print(distancias)
+l = []
+for sublista in distancias:
+    l.append(maximo(sublista))
+
+
+print(distancias)
+print(l)
+#print(sublista)
 #distancias.sort
 #print(distancias)
 
-
+'''for sublista in distancias:
+    for elemento in '''
