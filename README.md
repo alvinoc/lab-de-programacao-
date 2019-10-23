@@ -1,2 +1,2 @@
-# lab-de-programacao-
-exercicios da cadeira de lab de prog
+#programmin-lab
+Some excercise from the progamming laboratory 
